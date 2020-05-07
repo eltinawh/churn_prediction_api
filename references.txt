@@ -1,11 +1,26 @@
 https://www.analyticsvidhya.com/blog/2017/09/machine-learning-models-as-apis-using-flask/
 https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04
 
+Model preparation
+https://colab.research.google.com/drive/1hy0MAVV-LEz0eQcjVIt30vUczD44Pb6X
+
 Deployment to Heroku
 https://blog.cambridgespark.com/deploying-a-machine-learning-model-to-the-web-725688b851c7
 
-Inside the folder
+Steps Heroku Deployment
 0. Create heroku account
+Inside the folder
 1. git init
 2. heroku login # will be redirected to login page in browser, fill in username and password
 3. heroku create xgboost-churn-prediction # if name not available choose some other name, or heroku create only for random name
+4. git add .
+5. git commit -m "First Commit"
+6. heroku git:remote -a xgboost-churn-prediction
+7. git push heroku master # https://git.heroku.com/xgboost-churn-prediction.git
+In browser or postman
+8. In browser, go to https://xgboost-churn-prediction.herokuapp.com/health
+9. In postman, open a tab, change method to POST
+9a. Enter this URL https://xgboost-churn-prediction.herokuapp.com/predict
+9b. Go to Body, choose raw, and then JSON, 
+9c. Check in folder data the files api_test_multi_entris.json or api_test_single_entry.json and copy the content to Body
+9d. Press SEND and will return the predictions
