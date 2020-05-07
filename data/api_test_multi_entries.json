@@ -1,0 +1,4 @@
+[
+    {"RowNumber":2,"CustomerId":15647311,"Surname":"Hill","CreditScore":608,"Geography":"Spain","Gender":"Female","Age":41,"Tenure":1,"Balance":83807.86,"NumOfProducts":1,"HasCrCard":0,"IsActiveMember":1,"EstimatedSalary":112542.58},
+    {"RowNumber":8,"CustomerId":15656148,"Surname":"Obinna","CreditScore":376,"Geography":"Germany","Gender":"Female","Age":29,"Tenure":4,"Balance":115046.74,"NumOfProducts":4,"HasCrCard":1,"IsActiveMember":0,"EstimatedSalary":119346.88}
+]
